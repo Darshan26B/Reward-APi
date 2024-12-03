@@ -10,8 +10,6 @@ import retrofit2.Response
 
 class GridCallApi(mainActivity: MainActivity) {
 
-//    private val dbHelper: DatabaseHelper = DatabaseHelper(mainActivity)
-
     init {
         try {
             Api_Client().retrofit_client().getGrid().enqueue(object : Callback<GridDataModel> {
@@ -29,6 +27,4 @@ class GridCallApi(mainActivity: MainActivity) {
             Log.e("GridCallApi", "Error in API call: ${e.message}")
         }
     }
-
-
 }

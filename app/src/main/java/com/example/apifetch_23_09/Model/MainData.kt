@@ -6,73 +6,45 @@ import com.google.gson.annotations.SerializedName
 
 data class MainData(
 
-
     @SerializedName("bgColor")
-    var bgColor: String,
+    var bgColor: String="",
     @SerializedName("columnCount")
-    var columnCount: String,
+    var columnCount: String="",
     @SerializedName("data")
-    var data: MutableList<Data>?,
+    var data: List<Data>?,
     @SerializedName("displayImage")
-    var displayImage: String,
+    var displayImage: String="",
     @SerializedName("gridData")
     var gridData: List<GridData>?,
     @SerializedName("icon")
-    var icon: String,
+    var icon: String="",
     @SerializedName("iconBGColor")
-    var iconBGColor: String,
+    var iconBGColor: String="",
     @SerializedName("image")
-    var image: String,
+    var image: String="",
     @SerializedName("isActive")
-    var isActive: String,
+    var isActive: String="",
     @SerializedName("isBorder")
-    var isBorder: String,
+    var isBorder: String="",
     @SerializedName("isTodayTaskCompleted")
-    var isTodayTaskCompleted: String,
+    var isTodayTaskCompleted: String="",
     @SerializedName("isViewAll")
-    var isViewAll: String,
+    var isViewAll: String="",
     @SerializedName("note")
-    var note: String,
+    var note: String="",
     @SerializedName("pointBackgroundColor")
-    var pointBackgroundColor: String,
+    var pointBackgroundColor: String="",
     @SerializedName("pointTextColor")
-    var pointTextColor: String,
+    var pointTextColor: String="",
     @SerializedName("screenNo")
-    var screenNo: String,
+    var screenNo: String="",
     @SerializedName("subTitle")
-    var subTitle: String,
+    var subTitle: String="",
     @SerializedName("title")
-    var title: String,
+    var title: String="",
     @SerializedName("type")
-    var type: String,
+    var type: String="",
     @SerializedName("url")
-    var url: String,
+    var url: String="",
 
-    ) {
-    constructor(
-        type: String,
-        gridData: MutableList<GridData>,
-        data: MutableList<Data>,
-    ) : this(
-        "",
-        "",
-        data,
-        "",
-        gridData,
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        type,
-        ""
     )
-}

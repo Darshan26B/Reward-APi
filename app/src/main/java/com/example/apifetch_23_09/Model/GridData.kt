@@ -4,7 +4,7 @@ data class GridData(
     @SerializedName("bgColor")
     var bgColor: String = "",
     @SerializedName("fullImage")
-    var fullImage: String = "",
+    var fullImage: String="",
     @SerializedName("icon")
     var icon: String = "",
     @SerializedName("iconBGColor")
